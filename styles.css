@@ -1,0 +1,109 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-attachment: fixed;
+    color: #fff;
+    padding: 20px;
+}
+
+nav a {
+    font-size: 150%;
+    color: bisque;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+}
+
+nav :hover {
+    color: black;
+    transition: .5s;
+}
+
+.Socials i {
+    font-size: 25px;
+    
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#profile {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+}
+
+#profile img {
+    max-width: 100%;
+    border: 3px solid #0109118c;
+    border-radius: 50%;
+}
+
+#info {
+    float: left;
+    width: 50%;
+}
+
+fieldset, .Educationcontent {
+    border: 2px solid #091a2cce;
+    padding: 10px;
+    border-radius: 5px;
+    color: bisque;
+}
+
+legend {
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+    font-size: 150%;
+
+}
+
+.Educationcontent img {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 150px;
+    
+}
+
+.Educationcontent h1 {
+    margin-left: 80px ;
+}
+.Educationcontent ul {
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.Educationcontent p {
+    font-style: italic;
+    font-size: 100%;
+    font-weight: 100;
+    word-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+
+}
