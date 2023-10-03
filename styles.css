@@ -1,23 +1,27 @@
 
-
-body {
-    font-family: Arial, sans-serif;
+/* Styling font type, adding gradient background to make the visual more appealing than using monotone color*/
+* {
+    max-width: 100%;
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     background-attachment: fixed;
+    font-family: Arial, sans-serif;
+
+}
+
+body {
     margin: 0;
     padding: 0;
 }
 
+/* Styling header and adding background gradient to make it appear faded in*/
 header {
     text-align: center;
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    background-attachment: fixed;
-    color: #fff;
+    color: bisque;
     padding: 20px;
 }
 
+/* Adjusting navbar items such as color, underline and placement.*/
 nav a {
     font-size: 150%;
     color: bisque;
@@ -26,6 +30,8 @@ nav a {
     padding: 20px;
 }
 
+/* Adding hover feature to items in navbar. color will change once user hover after .5s*/
+
 nav :hover {
     color: black;
     transition: .5s;
@@ -33,36 +39,34 @@ nav :hover {
 
 .Socials i {
     font-size: 25px;
+}
+
+/* Adjusting position of profile/image on frontpage*/
+.profile img {
+   width: 50%;
+   height: auto;
+    border: 3px solid rgba(242, 220, 220, 0.181);
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 
-#container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+
+
+
+#front-content {
+    width: 40%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#profile {
-    float: left;
-    width: 30%;
-    margin-right: 20px;
-}
-
-#profile img {
-    max-width: 100%;
-    border: 3px solid #0109118c;
-    border-radius: 50%;
-}
-
-#info {
-    float: left;
-    width: 50%;
-}
-
-fieldset, .Educationcontent {
-    border: 2px solid #091a2cce;
-    padding: 10px;
+fieldset {
+    border: 3px solid #c0cad449;
+    padding: 8px;
     border-radius: 5px;
     color: bisque;
 }
@@ -74,21 +78,30 @@ legend {
     font-size: 150%;
 
 }
-
+/* Alligning and centering image (ViaLogo) to fit the fieldset*/
 .Educationcontent img {
-    width: 10%;
+    width: 20%;
     height: auto;
     border-radius: 50%;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     
 }
-
-.Educationcontent h1 {
-    margin-left: 80px ;
+.Educationcontent{
+    width: 80%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-.Educationcontent ul {
-    font-weight: 600;
-    font-size: 150%;
+
+.Educationcontent ul li {
+    font-weight: 800;
+    font-size: 100%;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
 }
 
 .Educationcontent p {
@@ -98,12 +111,10 @@ legend {
     word-spacing: 1px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-
+#mapVIA {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-left: 25%;
 }
