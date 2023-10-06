@@ -118,3 +118,11 @@ legend {
     padding: 20px;
     margin-left: 25%;
 }
+
+/* If the screen width is lower than 800px the nav socials will dissapear to ensure it wont overlap with the other content*/
+@media screen and (max-width: 800px) {
+    .Socials i {
+    display: none;
+    
+} 
+}
