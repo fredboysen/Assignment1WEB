@@ -6,7 +6,6 @@
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-
 }
 
 body {
@@ -43,20 +42,31 @@ nav :hover {
 
 /* Adjusting position of profile/image on frontpage*/
 .profile img {
-   width: 50%;
-   height: auto;
     border: 3px solid rgba(242, 220, 220, 0.181);
+    width: 50%;
+    height: auto;
     border-radius: 50%;
-    margin-left: 25%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     
+}
+
+#courses img {
+    width: 20%;
+    height: auto;
+    border-radius: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+
 }
 
 
 
-
-#front-content {
+/*Centering content on all pages */
+.front-content, .about-content, .Educationcontent {
     width: 40%;
     display: block;
     height: auto;
@@ -64,6 +74,10 @@ nav :hover {
     margin-right: auto;
 }
 
+.front-content h2, h3 {
+ text-align: center;
+}
+/* Adding transparant border to fieldset boxes and adjusting color of content text */
 fieldset {
     border: 3px solid #c0cad449;
     padding: 8px;
@@ -71,6 +85,11 @@ fieldset {
     color: bisque;
 }
 
+fieldset a {
+    color: bisque;
+}
+
+/* styling content of legend element, adjusting position and color */
 legend {
     font-weight: bold;
     color: bisque;
@@ -78,9 +97,11 @@ legend {
     font-size: 150%;
 
 }
-/* Alligning and centering image (ViaLogo) to fit the fieldset*/
+
+
+/* Alligning and centering image (ViaLogo) */
 .Educationcontent img {
-    width: 20%;
+    width: 40%;
     height: auto;
     border-radius: 50%;
     margin-left: auto;
@@ -88,39 +109,42 @@ legend {
     display: block;
     
 }
-.Educationcontent{
-    width: 80%;
-    display: block;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.Educationcontent ul li {
-    font-weight: 800;
-    font-size: 100%;
-    margin-bottom: 10px;
-    list-style: none;
-    padding: 0;
+
+.Educationcontent ul {
+    font-weight: 600;
+    font-size: 120%;
+    
 }
 
 .Educationcontent p {
     font-style: italic;
     font-size: 100%;
-    font-weight: 100;
     word-spacing: 1px;
 }
 
-#mapVIA {
-    display: block;
-    width: 100%;
+#video video {
+    border-radius: 50%;
+    width: 70%;
     height: auto;
-    padding: 20px;
-    margin-left: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#about-img {
+    width: 40%;
+    height: auto;
+    border-radius: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 /* If the screen width is lower than 800px the nav socials will dissapear to ensure it wont overlap with the other content*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .Socials i {
     display: none;
     
