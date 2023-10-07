@@ -4,7 +4,7 @@
     max-width: 100%;
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    background-attachment: fixed;
+    background-attachment: fixed; /* setting background attachment to fixed to make sure background doesnt get stretched i.e if margin of one element changes*/
     font-family: Arial, sans-serif;
 }
 
@@ -40,15 +40,16 @@ nav :hover {
     font-size: 25px;
 }
 
-/* Adjusting position of profile/image on frontpage*/
+/* Adjusting position of profile/image on frontpage & adding transparant border*/
 .profile img {
-    border: 3px solid rgba(242, 220, 220, 0.181);
+    border: 5px solid rgba(242, 220, 220, 0.181);
     width: 50%;
     height: auto;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 10px;
     
 }
 
@@ -63,22 +64,21 @@ nav :hover {
 
 }
 
-#mapVIA {
-text-align: center;
-}
 
 /*Centering content on all pages */
-.front-content, .about-content, .Educationcontent {
+#front-content, #about-content, #Educationcontent {
     width: 40%;
     display: block;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
-
-.front-content h2, h3 {
+/*Centering h2, h3 of frontpage and google maps navigation on education pages*/
+#front-content h2, h3, .mapVIA {
  text-align: center;
 }
+
+
 /* Adding transparant border to fieldset boxes and adjusting color of content text */
 fieldset {
     border: 3px solid #c0cad449;
@@ -102,32 +102,38 @@ legend {
 
 
 /* Alligning and centering image (ViaLogo) */
-.Educationcontent img {
-    width: 40%;
+#Educationcontent img {
+    width: 35%;
     height: auto;
     border-radius: 50%;
+    border-color: #c0cad449;
+    border-style: groove;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 10px;
     
 }
 
 
-.Educationcontent ul {
+#Educationcontent ul {
     font-weight: 600;
     font-size: 120%;
     
 }
-
-.Educationcontent p {
+/* adjusting font styling, sizing and word spacing for sections on different pages */
+#Educationcontent p, #about-content ul{
     font-style: italic;
     font-size: 100%;
     word-spacing: 2px;
 
 }
 
-#video video {
-    border-radius: 50%;
+/* centering, adding border and adjusting border for videos */
+.video video {
+    border-radius: 25%;
+    border: #c0cad449;
+    border-style: groove;
     width: 70%;
     height: auto;
     display: block;
@@ -136,17 +142,18 @@ legend {
 
 }
 
+/*centering and adjusting border of all img elements on about.html*/
 #about-img {
-    width: 40%;
+    width: 45%;
     height: auto;
-    border-radius: 60%;
+    border-radius: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-/* If the screen width is lower than 800px the nav socials will dissapear to ensure it wont overlap with the other content*/
+/* If the screen width is lower than 1000px the nav socials will dissapear to ensure it wont overlap with the other content*/
 @media screen and (max-width: 1000px) {
     .Socials i {
     display: none;

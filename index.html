@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- creating header with navbar and adding links for socials emails and download button for CV to navigation bar-->
     <header> <h1>Frederik Werner Boysen</h1>
         <nav class="Socials">
             <a href="index.html">Home</a>
@@ -22,8 +23,8 @@
     </header>
 
 
-
-        <div class="front-content">
+<!-- adding content for front page including image of myself, creating div-id for front content for easier differentiation when styling other pages-->
+        <div id="front-content">
 
             <div class="profile">
                 <img src="Images/Headshot.jpg" alt="Fred">
@@ -33,15 +34,16 @@
             <fieldset> 
                 <legend >About Me</legend>
                 <h3> "Fifth-semester Global Business Engineering student seeking tech job opportunities to apply and advance my skills".</h3>
+                <ul>
                 <li> Vestre Ringgade 46, 3th. 8000 Aarhus, Denmark</li>
                 <li> +45 31 10 74 40</li>
-                <li> 9th of June 1998</li>
+                <li> 9th of June 1998</li></ul>
             </fieldset>
             <fieldset> 
                 <legend>Education</legend>
                 <h2>VIA University College</h2>
                 <h3>Global Business Engineering (IT-Specialization) 2021-Present </h3>
-               <ul> <a id="LearnMore" href="Education.html"> Learn more about my education here</a> </ul>
+               
                 
                 
             </fieldset>
@@ -75,10 +77,10 @@
 
             <fieldset>
                 <legend>Courses</legend>
-                <div id="courses">
+                <div id="courses"> <!-- Adding div id="courses" to make styling easier for img elements in this section-->
                     <img src="Images/datacamp.png" alt="datacamp">
                 
-                <legend>Python Fundamentals & Data Manipulation Using Python (Online, May 2023) </legend>
+                <legend>Python Fundamentals & Data Manipulation Using Python  </legend>
                 <ul>The courses completed using the services by DataCamp.com provided me with not only a solid foundation
                     in Python but also practical expertise in data manipulation and visualization using Matplotlib and pandas. </ul>
 
