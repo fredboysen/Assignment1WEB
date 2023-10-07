@@ -63,6 +63,9 @@ nav :hover {
 
 }
 
+#mapVIA {
+text-align: center;
+}
 
 /*Centering content on all pages */
 .front-content, .about-content, .Educationcontent {
@@ -120,6 +123,7 @@ legend {
     font-style: italic;
     font-size: 100%;
     word-spacing: 2px;
+
 }
 
 #video video {
